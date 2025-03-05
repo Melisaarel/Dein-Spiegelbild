@@ -77,7 +77,7 @@
         </div>
         
         <div id="step9" class="step">
-            <h2> Melisa & Arel 🌌 Test-Analyse: Dein Spiegelbild im Spiegel</h2>
+            <h2> Melisa & Arel 🌌 Test-Analyse: Dein Spiegelbild im Spiegel </h2>
             <p id="arelMessage"></p>
             <button onclick="nextStep(10)">Weiter</button>
         </div>
@@ -150,9 +150,9 @@
                 "Die Vergangenheit": "Eremiten-Seele 🌿 Du bist eine Eremiten-Seele! Für dich ist Einsamkeit keine Flucht, sondern eine Wahl. Du suchst Frieden und Bedeutung in deiner inneren Welt, fernab der Massen. Du liebst es, den Lärm der Außenwelt abzulegen und dich in tiefen Gedanken zu verlieren. Du kannst dich mit Menschen verbinden, doch dein wahres Ich teilst du nur mit wenigen. Für dich ist das Wertvollste das innere Gleichgewicht und die Freiheit. Du findest Kraft in der Stille und entdeckst dich selbst in der Einsamkeit. Die Welt mag dich als zurückgezogen sehen, doch für dich ist dies die natürlichste und friedlichste Art zu sein. 📝 Vorschlag: Lass die Last der Vergangenheit los, denn sie ist nur ein Moment, der dich zurückhält. Konzentriere dich auf die Gegenwart; jeder Moment ist eine Neuheit, ein neuer Anfang. Befreie deinen Geist von den Schatten der Vergangenheit und fülle dein Herz mit dem Licht des Heute. 📕 „Ja, genau. Gerade jetzt braucht es weder die Last der Vergangenheit noch die Unsicherheit der Zukunft. Wir existieren einfach. Hier und jetzt. Und genau hier ist der Frieden verborgen.“ (Arel)",
                 "Mut": "Freie Seele 🦅 Du bist eine freie Seele! Du neigst zur Unabhängigkeit und liebst es, deinen eigenen Weg zu gestalten. Anstatt dich starr an Traditionen oder Erwartungen zu klammern, folgst du deinem Instinkt. Du bist offen für neue Erfahrungen, kreativ und neugierig. Regeln sind für dich nur Richtlinien; du hast keine Angst, Grenzen zu überschreiten. Diese Eigenschaft verleiht deinem Leben Farbe und Spannung, auch wenn es für andere schwer zu verstehen sein mag. Aber du bist eine der wenigen Personen, die niemals aufhören, ihren eigenen Wahrheiten zu folgen! 📝 Vorschlag: Die Stimme in dir führt dich nur auf einen Weg, den du selbst gehen kannst. Verirre dich nicht auf den Pfaden anderer, sondern hinterlasse mit deinen eigenen Schritten Spuren. 📕 „Deine Schritte wurden entschlossener. Du hattest die Kraft entdeckt, etwas für dich selbst zu tun und deiner eigenen Stimme zu folgen.“ (Arel)"
             };
-
             return messages[answers[0]] || "Finde deinen eigenen Weg. Das, wonach du suchst, war nie getrennt von dir. 📕 „Aber wann wirst du aufhören, in den Spiegel zu schauen und endlich dich selbst sehen?“ (Arel)";
-
+        }
+        
          function nextStep(step) {
             document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
             document.getElementById('step' + step).classList.add('active');           
